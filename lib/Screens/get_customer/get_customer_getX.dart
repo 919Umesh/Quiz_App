@@ -7,6 +7,7 @@ import 'get_customer_repo.dart';
 class GetCustomerController extends GetxController {
   final isLoading = false.obs;
   RxBool seeMoreDes = false.obs;
+  //Reactive list of the users
   final userList = <UserModel>[].obs;
 
   @override
