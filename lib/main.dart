@@ -18,7 +18,7 @@ class GetTest extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Lok Sewa',
+      title: 'Lok Pro',
       debugShowCheckedModeBanner: false,
       theme: lightTheme,
       initialBinding: AppBindings(),
