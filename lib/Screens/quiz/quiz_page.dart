@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'quiz_getx.dart';
 import '../../Models/quiz_model.dart';
 
@@ -13,11 +14,11 @@ class GetQuizPage extends GetView<GetQuizController> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.white,
-        title: const Text(
+        title:  Text(
           'Quiz',
-          style: TextStyle(
+          style: GoogleFonts.poppins(
             color: Colors.black87,
-            fontWeight: FontWeight.bold,
+            fontWeight: FontWeight.w600,
             fontSize: 22,
           ),
         ),
@@ -116,11 +117,17 @@ class GetQuizPage extends GetView<GetQuizController> {
                       ),
                       child: Text(
                         question.question,
-                        style: const TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black87,
-                        ),
+                       style: GoogleFonts.poppins(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.black87,
+
+                       ),
+                        // style: const TextStyle(
+                        //   fontSize: 18,
+                        //   fontWeight: FontWeight.bold,
+                        //   color: Colors.black87,
+                        // ),
                       ),
                     ),
                     const SizedBox(height: 30),
@@ -232,12 +239,12 @@ class GetQuizPage extends GetView<GetQuizController> {
         child: Center(
           child: Text(
             'Check Answer',
-            style: TextStyle(
+            style: GoogleFonts.poppins(
               fontSize: 16,
-              fontWeight: FontWeight.bold,
+              fontWeight: FontWeight.w500,
               color: Colors.white.withOpacity(
                 controller.selectedOptionIndex.value != -1 ? 1 : 0.7,
-              ), // Adjust text opacity based on enabled/disabled
+              ),
             ),
           ),
         ),
